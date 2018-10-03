@@ -1,0 +1,13 @@
+﻿@model Pics
+
+
+<div class="container">
+    <div class="img-thumbnail">
+        <img src="@Model.ImageUrl" class="img-fluid" alt="@Model.Description" />
+        <h4 class="text-center">
+            @Model.Name
+        </h4>
+        <h4 class="text-center">@Model.Description</h4>
+        <p>@Model.LongDescription</p>
+    </div>
+</div>

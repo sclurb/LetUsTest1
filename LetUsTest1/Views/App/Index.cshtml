@@ -1,0 +1,24 @@
+﻿@model AppViewModels
+
+<div class="container">
+    <h2>@Model.Title</h2>
+    <div class="row no-gutters">
+        @foreach (var pic in Model.Pics)
+        {
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="img-thumbnail">
+                    <a asp-controller="App" asp-action="More" asp-route-id="@pic.Id">
+                        <img src="@pic.ImageUrl" alt="@pic.Description" class="img-fluid" />
+                    </a>
+                    <div class="figure-caption">
+                        <h4 class="text-center">
+                            <a asp-controller="App" asp-action="More" asp-route-id="@pic.Id"> @pic.Name</a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
