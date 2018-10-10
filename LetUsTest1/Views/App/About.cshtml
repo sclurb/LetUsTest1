@@ -1,6 +1,59 @@
-﻿<div class="container">
+﻿<head>
+
+    <link href="/css/jquery-ui.css" rel="stylesheet" />
+    <script src="/js/jquery-ui-1.10.2.js"></script>
+    <script src="/js/1.11.4-jquery-ui.js"></script>
+    <script>
+        
+        $(function () {
+            
+            $("#dialog").dialog({
+                width: 500,
+                maxWidth: 750,
+                 autoOpen: false
+            });
+            
+            $('#showAlert').on("click", function () {
+                $("#dialog").dialog("open");
+            });
+
+            $('#close').on("click", function () {
+                $("#dialog").dialog("close");
+            });
+        });
+    </script>
+
+    <style>
+        .foo-bar{
+            text-align: left;
+        }
+
+    </style>
+</head>
+
+
+<div class="container orange">
     <h2>Welcome to Bob's @ViewBag.Title</h2>
-    <p>This web site is meant to show what I know of web design.   This site will be changed, upgraded and added to as I go along.
-    This site runs on ASP.NET MVC Core 2.1   It has some web api stuff going on and I hope to put an ajax call with a pop-up window soon.   we'll see if there is time.
-    Thank you for visiting.   </p>
+    <p>
+        This web site is meant to show what I know of web design.   This Page
+        happens to have a simple jquery popup window.   It opens when you click the button.  It closes when you click on the image
+
+        Thank you for visiting.
+    </p>
+
+    <div id="dialog" title="Cheezy Jquery Popup Window">
+        <button id="close">
+            <img src="~/images/DSC_1000.jpg" class="img-fluid" alt="Bob's Boat" />
+            <h3>Bob's Boat is Ready at Seminole Marina</h3>
+            <ul class="foo-bar">
+                <li>Boat Ready</li>
+                <li>Cooler Ready (right behind the driver's seat)</li>
+                <li>Just waiting for passengers</li>
+            </ul>
+            <h6>Click Picture to Close Popup.</h6>
+        </button>
+    </div>
+    <div class="text-center">
+        <button id="showAlert">Take a look at Bob's Boat</button>
+    </div>
 </div>
