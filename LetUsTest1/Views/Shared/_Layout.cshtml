@@ -5,11 +5,12 @@
     <title>@ViewBag.Title</title>
     <meta name="viewport" content="width=device-width" />
     <link href="~/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
-    <script src="~/js/index.js"></script>
+
+
+
     <style>
         .blah {
-            background-image: url('../../wwwroot/images/pattern.png');
+            background-image: url('/images/pattern.png');
             background-color: aquamarine;
         }
     </style>
@@ -30,7 +31,6 @@
                         <a class="nav-link" asp-controller="App" asp-action="About">About</a>
                     </li>
                     <li class="nav-item">
-                        
                         <a class="nav-link" asp-controller="App" asp-action="Contact">Contact</a>
                     </li>
                 </ul>
@@ -39,8 +39,11 @@
     </header>
 
     <div>
+
         @RenderBody()
     </div>
+    <script src="~/css/jquery.js"></script>
+    <script src="~/css/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
