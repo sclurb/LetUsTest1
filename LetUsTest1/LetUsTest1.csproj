@@ -7,6 +7,10 @@
 
   <ItemGroup>
     <Content Remove="wwwroot\css\bootstrap.min.css.map" />
+    <Content Remove="wwwroot\js\bootstrap.bundle.js" />
+    <Content Remove="wwwroot\js\bootstrap.bundle.js.map" />
+    <Content Remove="wwwroot\js\bootstrap.bundle.min.js" />
+    <Content Remove="wwwroot\js\bootstrap.bundle.min.js.map" />
   </ItemGroup>
 
   <ItemGroup>
@@ -158,6 +162,10 @@
     <None Include="node_modules\bootstrap\scss\_utilities.scss" />
     <None Include="node_modules\bootstrap\scss\_variables.scss" />
     <None Include="wwwroot\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\js\bootstrap.bundle.min.js.map" />
   </ItemGroup>
 
   <ItemGroup>
